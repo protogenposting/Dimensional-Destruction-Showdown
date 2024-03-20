@@ -34,6 +34,7 @@
   },
   "name":"Dimensional Destruction Showdown",
   "resources":[
+    {"id":{"name":"obj_character_selector","path":"objects/obj_character_selector/obj_character_selector.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
   "resourceType":"GMProject",
