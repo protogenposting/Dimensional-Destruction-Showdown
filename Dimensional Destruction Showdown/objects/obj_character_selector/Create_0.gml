@@ -25,6 +25,8 @@ function attackContainer() constructor
 	supers=[]
 }
 
+#region make the test character. probably needs a better system idk
+
 characterList=[]
 
 var _tempAttackStruct=new attackContainer()
@@ -34,12 +36,9 @@ _tempAttackStruct.tilts[attackDirections.left]=function()
 	
 }
 
+#endregion
+
 array_push(characterList,new character(
 	"test",
 	_tempAttackStruct
-))
-
-array_push(characterList,new character(
-	"test2",
-	{}
 ))
