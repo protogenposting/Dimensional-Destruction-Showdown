@@ -14,22 +14,29 @@ function character(_name,_attackStruct) constructor
 	attackStruct=_attackStruct
 }
 
-function attackContainer(_tilts,_clash,_dash,_aerials,_grabs,_specials,_supers) constructor
+function attackContainer() constructor
 {
-	tilts=_tilts
-	clash=_clash
-	dash=_dash
-	aerials=_aerials
-	grabs=_grabs
-	specials=_specials
-	supers=_supers
+	tilts=[]
+	clash=[]
+	dash=function(){}
+	aerials=[]
+	grabs=[]
+	specials=[]
+	supers=[]
 }
 
 characterList=[]
 
+var _tempAttackStruct=new attackContainer()
+
+_tempAttackStruct.tilts[attackDirections.left]=function()
+{
+	
+}
+
 array_push(characterList,new character(
 	"test",
-	{}
+	_tempAttackStruct
 ))
 
 array_push(characterList,new character(
