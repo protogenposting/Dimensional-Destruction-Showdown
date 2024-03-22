@@ -2,7 +2,7 @@
 //funny character selectorussy
 //feel free to change any values :3
 //we have to add controller support a lil later
-var _x=room_width/2
+var _x=room_width/2 - (array_length(characterList)-1)*64
 var _y=room_height/2
 var _characterBoxSize=128
 for(var _i=0;_i<array_length(characterList);_i++)
